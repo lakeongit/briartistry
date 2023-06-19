@@ -1,0 +1,22 @@
+# Service Provider model definition
+class ServiceProvider:
+    def __init__(self, username, password, name, email, contact_details, service_offerings):
+        self.username = username
+        self.password = password
+        self.name = name
+        self.email = email
+        self.contact_details = contact_details
+        self.service_offerings = service_offerings
+
+# Service provider registration endpoint
+def register_service_provider(username, password, name, email, contact_details, service_offerings):
+    # Validate input data
+    
+    # Check if username is already taken
+    
+    # Create a new ServiceProvider instance
+    new_provider = ServiceProvider(username, password, name, email, contact_details, service_offerings)
+    
+    # Save the new provider to the database or provider repository
+    
+    # Return a success response or appropriate message
