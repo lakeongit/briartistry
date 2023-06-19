@@ -1,0 +1,21 @@
+# User model definition
+class User:
+    def __init__(self, username, password, name, email, contact_details):
+        self.username = username
+        self.password = password
+        self.name = name
+        self.email = email
+        self.contact_details = contact_details
+
+# User registration endpoint
+def register_user(username, password, name, email, contact_details):
+    # Validate input data
+
+    # Check if username is already taken
+    
+    # Create a new User instance
+    new_user = User(username, password, name, email, contact_details)
+    
+    # Save the new user to the database or user repository
+    
+    # Return a success response or appropriate message
